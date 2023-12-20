@@ -135,7 +135,7 @@ html {
     margin-bottom: 16px;
 }
 
-.container-right .song-img img {
+.container-right .song-img-audio img {
     width: 300px;
     height: 300px;
     margin-bottom: 20px;
@@ -161,6 +161,15 @@ html {
     background: #B7B7B7;
     margin-bottom: 7px;
     cursor: pointer;
+    position: relative;
+}
+
+.song-playing .progressFill{
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+    /* width: 0; */
 }
 
 .song-playing-duration {
@@ -174,14 +183,18 @@ html {
 .play-button {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
-.play-button img {
+.play-button div {
     background-color: white;
     padding: 15px;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

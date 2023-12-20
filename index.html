@@ -20,7 +20,7 @@
                     <h4>Album</h4>
                     <h2>Late-Night Debug Sessions</h2>
                     <h5>by <u>hsynmrzyv</u></h5>
-                    <p>2022 · <span>16 songs</span> · <span>51m 49s</span> </p>
+                    <p>2022 · <span id="countSongs">16 songs</span> · <span id="durationSongs">51m 49s</span> </p>
                 </div>
             </div>
             <div class="song-list">
@@ -34,8 +34,8 @@
                     </div>
                 </div>
                 <div class="list-page">
-                    <ul>
-                        <li>
+                    <ul id="playlist">
+                        <!-- <li>
                             <div class="list-title">
                                 <h4>1</h4>
                                 <p>Summertime Saddness</p>
@@ -88,7 +88,7 @@
                             <div class="list-duration">
                                 <p>1:36</p>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
 
@@ -100,24 +100,27 @@
                 <img src="./assets/icons/volume.svg" alt="">
             </div>
             <h5>Now Playing</h5>
-            <div class="song-img">
-                <img src="./assets/images/summertime-sadness.jpeg" alt="">
+            <div class="song-img-audio">
+                <img id="songImage" src="./assets/images/fourth-of-july.jpeg" alt="">
+                <audio id="song" src="./assets/songs/fourth-of-july.mp3"></audio>
             </div>
-            <h3>Summertime Saddness</h3>
-            <h4>Lana Del Rey</h4>
-            <div class="song-playing"></div>
+            <h3 id="songTitle">Summertime Saddness</h3>
+            <h4 id="artist">Lana Del Rey</h4>
+            <div class="song-playing">
+                <div class="progressFill"></div>
+            </div>
             <div class="song-playing-duration">
-                <p>0:00</p>
-                <p>1:36</p>
+                <p id="currentTime">0:00</p>
+                <p id="duration">1:36</p>
             </div>
             <div class="play-button">
-                <div class="play-button-img">
+                <div id="previous">
                     <img src="./assets/icons/previous.svg" alt="">
                 </div>
-                <div class="play-button-img">
+                <div id="playandpause">
                     <img src="./assets/icons/play.svg" alt="">
                 </div>
-                <div class="play-button-img">
+                <div id="next">
                     <img src="./assets/icons/next.svg" alt="">
                 </div>
             </div>
